@@ -1,0 +1,8 @@
+id;name;addr
+0;Itis;Itäkatu 1-7, 00930 Helsinki, Finland
+1;Forum;Mannerheimintie 14-20, 00100 Helsinki, Finland
+2;Iso-omena;Piispansilta 11, 02230 Espoo, Finland
+3;Dixi;Ratatie 11, 01300 Vantaa, Finland
+4;Jumbo;Vantaanportinkatu 3, 01510 Vantaa, Finland
+5;Myyrmanni;Iskoskuja 3 A 1, 01600 Vantaa, Finland
+6;Ruoholahti;Salmisaarenkatu 9, 00180 Helsinki, Finland
