@@ -4,17 +4,20 @@ To this page you should add links to your interactive html-maps that are located
 
  `https://autogis-2019.github.io/exercise-5-YourUserName/filename.html`
 
-Here is an example how to do it in MarkDown for user VuokkoH:
-
-```
-[Link to test map](https://autogis-2019.github.io/exercise-5-VuokkoH/test_map.html)
-```
-
-## My maps
 
 Edit the text below and add links to the maps that you have created:
 
- - [My static map]()
- - [My interactive map]()
+## My maps
+
+
+ - [Travel times to shopping centers](https://autogis-2019.github.io/exercise-5-miaula/Static_map_travel_times_to_shopping_centers.png)
+
+ - [Minoan civilization](https://autogis-2019.github.io/exercise-5-miaula/Minoan_Civilization_sites.html)
+
  - [Link to test map](https://autogis-2018.github.io/exercise-5-VuokkoH/test_map.html)
+
+
+
+
+ 
 

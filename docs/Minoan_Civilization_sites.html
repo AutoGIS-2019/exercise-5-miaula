@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_50fb59594bac4e409bfa9620e3edd352 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_50fb59594bac4e409bfa9620e3edd352" ></div>
+        
+</body>
+<script>    
+    
+            var map_50fb59594bac4e409bfa9620e3edd352 = L.map(
+                "map_50fb59594bac4e409bfa9620e3edd352",
+                {
+                    center: [36.35, 25.45],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: true,
+                }
+            );
+            L.control.scale().addTo(map_50fb59594bac4e409bfa9620e3edd352);
+
+            
+
+        
+    
+            var tile_layer_89aeb7e3d99147ebbff73e6f7a7b9153 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_50fb59594bac4e409bfa9620e3edd352);
+        
+    
+            var tile_layer_17cf0acb409745f5a58a4889bc9a89ff = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/toner-labels/{z}/{x}/{y}{r}.png",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 0.42, "subdomains": "abc", "tms": false}
+            ).addTo(map_50fb59594bac4e409bfa9620e3edd352);
+        
+    
+            var feature_group_81f405cd6f50443e80dfc01e75d39803 = L.featureGroup(
+                {}
+            ).addTo(map_50fb59594bac4e409bfa9620e3edd352);
+        
+    
+            var marker_cluster_a26331794f3d49b69710a913e449c421 = L.markerClusterGroup(
+                {}
+            );
+            feature_group_81f405cd6f50443e80dfc01e75d39803.addLayer(marker_cluster_a26331794f3d49b69710a913e449c421);
+        
+    
+            var marker_d03ce24e3794452886346e0440842fe5 = L.marker(
+                [35.2979516, 25.16329744],
+                {}
+            ).addTo(marker_cluster_a26331794f3d49b69710a913e449c421);
+        
+    
+            var icon_39cdb581e617476ba463db74b507fef5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bank", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d03ce24e3794452886346e0440842fe5.setIcon(icon_39cdb581e617476ba463db74b507fef5);
+        
+    
+        var popup_5886a14032144e238bf2e7a3454c211d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f8e30d04dcbb4f35b3e09fb72b2cd8be = $(`<div id="html_f8e30d04dcbb4f35b3e09fb72b2cd8be" style="width: 100.0%; height: 100.0%;">Ancient city of Knossos - <a href="https://en.wikipedia.org/wiki/Knossos" target="_blank"> [Knossos] </a></div>`)[0];
+            popup_5886a14032144e238bf2e7a3454c211d.setContent(html_f8e30d04dcbb4f35b3e09fb72b2cd8be);
+        
+
+        marker_d03ce24e3794452886346e0440842fe5.bindPopup(popup_5886a14032144e238bf2e7a3454c211d)
+        ;
+
+        
+    
+    
+            var marker_4f97cb272e724bce9d38d2a5ff42f91a = L.marker(
+                [35.29313441, 25.49278674],
+                {}
+            ).addTo(marker_cluster_a26331794f3d49b69710a913e449c421);
+        
+    
+            var icon_661f9b850ab348faa73afef74ff86f99 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bank", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_4f97cb272e724bce9d38d2a5ff42f91a.setIcon(icon_661f9b850ab348faa73afef74ff86f99);
+        
+    
+        var popup_fe54ba002b7747548a8e4891eee043e4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cd507c83daf947e198396115585299e6 = $(`<div id="html_cd507c83daf947e198396115585299e6" style="width: 100.0%; height: 100.0%;">Mallia - palace</div>`)[0];
+            popup_fe54ba002b7747548a8e4891eee043e4.setContent(html_cd507c83daf947e198396115585299e6);
+        
+
+        marker_4f97cb272e724bce9d38d2a5ff42f91a.bindPopup(popup_fe54ba002b7747548a8e4891eee043e4)
+        ;
+
+        
+    
+    
+            var marker_2df467a9d49146e5b00da44328948b9c = L.marker(
+                [35.05900158, 24.79229153],
+                {}
+            ).addTo(marker_cluster_a26331794f3d49b69710a913e449c421);
+        
+    
+            var icon_7e887f0f2004427bae4f09af827f1696 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_2df467a9d49146e5b00da44328948b9c.setIcon(icon_7e887f0f2004427bae4f09af827f1696);
+        
+    
+        var popup_69d7d1dc2c40487fa105cdc7c81e0dbd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4389c505206347f499afeb58be396e12 = $(`<div id="html_4389c505206347f499afeb58be396e12" style="width: 100.0%; height: 100.0%;">Aghia Triada - important settlement</div>`)[0];
+            popup_69d7d1dc2c40487fa105cdc7c81e0dbd.setContent(html_4389c505206347f499afeb58be396e12);
+        
+
+        marker_2df467a9d49146e5b00da44328948b9c.bindPopup(popup_69d7d1dc2c40487fa105cdc7c81e0dbd)
+        ;
+
+        
+    
+    
+            var marker_b6301334e0c3410cb0a3466de4775198 = L.marker(
+                [35.051389, 24.813611],
+                {}
+            ).addTo(marker_cluster_a26331794f3d49b69710a913e449c421);
+        
+    
+            var icon_f826967071dc4e65af5c360c67a6aca9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bank", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_b6301334e0c3410cb0a3466de4775198.setIcon(icon_f826967071dc4e65af5c360c67a6aca9);
+        
+    
+        var popup_1b068b282c89403682db1aeb616df560 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5312dd4b55e042afb0e2da783b0e8b72 = $(`<div id="html_5312dd4b55e042afb0e2da783b0e8b72" style="width: 100.0%; height: 100.0%;">Phaistos - palace</div>`)[0];
+            popup_1b068b282c89403682db1aeb616df560.setContent(html_5312dd4b55e042afb0e2da783b0e8b72);
+        
+
+        marker_b6301334e0c3410cb0a3466de4775198.bindPopup(popup_1b068b282c89403682db1aeb616df560)
+        ;
+
+        
+    
+    
+            var marker_50148db19ec34cc5bf36ddbf174e26a5 = L.marker(
+                [35.10950726, 25.79283056],
+                {}
+            ).addTo(marker_cluster_a26331794f3d49b69710a913e449c421);
+        
+    
+            var icon_510dc5e4ecfa42bf86be3764f4dfb911 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bank", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_50148db19ec34cc5bf36ddbf174e26a5.setIcon(icon_510dc5e4ecfa42bf86be3764f4dfb911);
+        
+    
+        var popup_7539015e92ee4f538d9ec37ce2b40b2d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_08815515824d40a3aaf8a2fecf4b8002 = $(`<div id="html_08815515824d40a3aaf8a2fecf4b8002" style="width: 100.0%; height: 100.0%;">Gournia - palace</div>`)[0];
+            popup_7539015e92ee4f538d9ec37ce2b40b2d.setContent(html_08815515824d40a3aaf8a2fecf4b8002);
+        
+
+        marker_50148db19ec34cc5bf36ddbf174e26a5.bindPopup(popup_7539015e92ee4f538d9ec37ce2b40b2d)
+        ;
+
+        
+    
+    
+            var marker_33684249bcc54e7ca61b0227b517114a = L.marker(
+                [35.09820351, 26.26139898],
+                {}
+            ).addTo(marker_cluster_a26331794f3d49b69710a913e449c421);
+        
+    
+            var icon_cdb882a363f4498f929f958291d72b64 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bank", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_33684249bcc54e7ca61b0227b517114a.setIcon(icon_cdb882a363f4498f929f958291d72b64);
+        
+    
+        var popup_857c57aadf444596a02664f0ca4e8f8b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3a6bed727f0348739e02f4ae995bdafd = $(`<div id="html_3a6bed727f0348739e02f4ae995bdafd" style="width: 100.0%; height: 100.0%;">Zakros - palace</div>`)[0];
+            popup_857c57aadf444596a02664f0ca4e8f8b.setContent(html_3a6bed727f0348739e02f4ae995bdafd);
+        
+
+        marker_33684249bcc54e7ca61b0227b517114a.bindPopup(popup_857c57aadf444596a02664f0ca4e8f8b)
+        ;
+
+        
+    
+    
+            var marker_5ab0d1cf09664d038f778b3547840424 = L.marker(
+                [35.31165945, 24.49687119],
+                {}
+            ).addTo(marker_cluster_a26331794f3d49b69710a913e449c421);
+        
+    
+            var icon_4be95b33289243809fa4de2e5043e5ce = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fire", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_5ab0d1cf09664d038f778b3547840424.setIcon(icon_4be95b33289243809fa4de2e5043e5ce);
+        
+    
+        var popup_3fe482df84d34a9e89289e67e1173a3e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_05632e03161840d5a062726a893905f8 = $(`<div id="html_05632e03161840d5a062726a893905f8" style="width: 100.0%; height: 100.0%;">Vrisynas - mountain sanctuary</div>`)[0];
+            popup_3fe482df84d34a9e89289e67e1173a3e.setContent(html_05632e03161840d5a062726a893905f8);
+        
+
+        marker_5ab0d1cf09664d038f778b3547840424.bindPopup(popup_3fe482df84d34a9e89289e67e1173a3e)
+        ;
+
+        
+    
+    
+            var marker_2b1cd006a5064a38b4826e960a0ad663 = L.marker(
+                [35.23991193, 25.14419593],
+                {}
+            ).addTo(marker_cluster_a26331794f3d49b69710a913e449c421);
+        
+    
+            var icon_3d59f8b0a96b4d8cb4642ca9d67f99ed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fire", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_2b1cd006a5064a38b4826e960a0ad663.setIcon(icon_3d59f8b0a96b4d8cb4642ca9d67f99ed);
+        
+    
+        var popup_7cc7327482e54b57970b1a23c18fd3d0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e19a37c3259b4b1eaf0e396c5ad50f59 = $(`<div id="html_e19a37c3259b4b1eaf0e396c5ad50f59" style="width: 100.0%; height: 100.0%;">Youkhtas - mountain sanctuary</div>`)[0];
+            popup_7cc7327482e54b57970b1a23c18fd3d0.setContent(html_e19a37c3259b4b1eaf0e396c5ad50f59);
+        
+
+        marker_2b1cd006a5064a38b4826e960a0ad663.bindPopup(popup_7cc7327482e54b57970b1a23c18fd3d0)
+        ;
+
+        
+    
+    
+            var marker_3d1994d4520f4899ba25d8d3bd876ac2 = L.marker(
+                [35.14419877, 25.26035656],
+                {}
+            ).addTo(marker_cluster_a26331794f3d49b69710a913e449c421);
+        
+    
+            var icon_1a0be4abe0d84a75b62e1679b48c3af0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fire", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_3d1994d4520f4899ba25d8d3bd876ac2.setIcon(icon_1a0be4abe0d84a75b62e1679b48c3af0);
+        
+    
+        var popup_c89ae36fbd0e43efa1db6cf9eaa61541 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1ce291844a024fc6b1aac0dde4aa8f0b = $(`<div id="html_1ce291844a024fc6b1aac0dde4aa8f0b" style="width: 100.0%; height: 100.0%;">Arcalochori - sacred cave</div>`)[0];
+            popup_c89ae36fbd0e43efa1db6cf9eaa61541.setContent(html_1ce291844a024fc6b1aac0dde4aa8f0b);
+        
+
+        marker_3d1994d4520f4899ba25d8d3bd876ac2.bindPopup(popup_c89ae36fbd0e43efa1db6cf9eaa61541)
+        ;
+
+        
+    
+    
+            var marker_8fe4052ccbfc48c1bc4d7138d3e6a7d0 = L.marker(
+                [35.516667, 24.016667],
+                {}
+            ).addTo(marker_cluster_a26331794f3d49b69710a913e449c421);
+        
+    
+            var icon_ac24692e3c0a476c82781ff8d7b972d2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_8fe4052ccbfc48c1bc4d7138d3e6a7d0.setIcon(icon_ac24692e3c0a476c82781ff8d7b972d2);
+        
+    
+        var popup_16362a1cf54447039ff2553fa2361aeb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2cae42d02f6b4d7aa7a529f088577c02 = $(`<div id="html_2cae42d02f6b4d7aa7a529f088577c02" style="width: 100.0%; height: 100.0%;">Kydonia - important settlement</div>`)[0];
+            popup_16362a1cf54447039ff2553fa2361aeb.setContent(html_2cae42d02f6b4d7aa7a529f088577c02);
+        
+
+        marker_8fe4052ccbfc48c1bc4d7138d3e6a7d0.bindPopup(popup_16362a1cf54447039ff2553fa2361aeb)
+        ;
+
+        
+    
+    
+            var marker_2e3eaabbee3540c888808f7d8d3268c8 = L.marker(
+                [36.351389, 25.403611],
+                {}
+            ).addTo(marker_cluster_a26331794f3d49b69710a913e449c421);
+        
+    
+            var icon_e687342d0000462eb698ffc31e6c862f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bank", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_2e3eaabbee3540c888808f7d8d3268c8.setIcon(icon_e687342d0000462eb698ffc31e6c862f);
+        
+    
+        var popup_55b5b5bc8f3547c88fdf74f16ca2bbe7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c410801579a2480bb91c020a7c5221c5 = $(`<div id="html_c410801579a2480bb91c020a7c5221c5" style="width: 100.0%; height: 100.0%;">Akrotiri - <a href="https://en.wikipedia.org/wiki/Minoan_eruption" target="_blank"> [Minoan eruption] </a></div>`)[0];
+            popup_55b5b5bc8f3547c88fdf74f16ca2bbe7.setContent(html_c410801579a2480bb91c020a7c5221c5);
+        
+
+        marker_2e3eaabbee3540c888808f7d8d3268c8.bindPopup(popup_55b5b5bc8f3547c88fdf74f16ca2bbe7)
+        ;
+
+        
+    
+    
+            var feature_group_2057221e51b24eb3a5678141d1b94edf = L.featureGroup(
+                {}
+            ).addTo(map_50fb59594bac4e409bfa9620e3edd352);
+        
+    
+            var marker_cluster_5ff99575fe7e46c787e79f28452a9cb0 = L.markerClusterGroup(
+                {}
+            );
+            feature_group_2057221e51b24eb3a5678141d1b94edf.addLayer(marker_cluster_5ff99575fe7e46c787e79f28452a9cb0);
+        
+    
+            var marker_daca07acbe1d43e5909e45159d7ecdc3 = L.marker(
+                [37.668889, 24.325833],
+                {}
+            ).addTo(marker_cluster_5ff99575fe7e46c787e79f28452a9cb0);
+        
+    
+            var icon_5798702628b8454ca4797eecd5e1b2d4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_daca07acbe1d43e5909e45159d7ecdc3.setIcon(icon_5798702628b8454ca4797eecd5e1b2d4);
+        
+    
+        var popup_c758bcd385f746b5b88023daa8c16104 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f55c9172ef3247a4b2ca162830fc6a01 = $(`<div id="html_f55c9172ef3247a4b2ca162830fc6a01" style="width: 100.0%; height: 100.0%;">Agia Eirini - colony</div>`)[0];
+            popup_c758bcd385f746b5b88023daa8c16104.setContent(html_f55c9172ef3247a4b2ca162830fc6a01);
+        
+
+        marker_daca07acbe1d43e5909e45159d7ecdc3.bindPopup(popup_c758bcd385f746b5b88023daa8c16104)
+        ;
+
+        
+    
+    
+            var marker_31f797dac9344128be48227637d677de = L.marker(
+                [36.755028, 24.505053],
+                {}
+            ).addTo(marker_cluster_5ff99575fe7e46c787e79f28452a9cb0);
+        
+    
+            var icon_024c34149a894c0e9c0b4b58fe4528ee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_31f797dac9344128be48227637d677de.setIcon(icon_024c34149a894c0e9c0b4b58fe4528ee);
+        
+    
+        var popup_9f12c74a127a45c082723f2504cac204 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_540eea9bf7fc4238b0ad1761e566c50a = $(`<div id="html_540eea9bf7fc4238b0ad1761e566c50a" style="width: 100.0%; height: 100.0%;">Phylakopi - colony</div>`)[0];
+            popup_9f12c74a127a45c082723f2504cac204.setContent(html_540eea9bf7fc4238b0ad1761e566c50a);
+        
+
+        marker_31f797dac9344128be48227637d677de.bindPopup(popup_9f12c74a127a45c082723f2504cac204)
+        ;
+
+        
+    
+    
+            var marker_2f7185ecbb32426396b7a9b06bb02335 = L.marker(
+                [36.2672, 22.9811],
+                {}
+            ).addTo(marker_cluster_5ff99575fe7e46c787e79f28452a9cb0);
+        
+    
+            var icon_9825e6af6da546159e99cba5acbbd1b0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_2f7185ecbb32426396b7a9b06bb02335.setIcon(icon_9825e6af6da546159e99cba5acbbd1b0);
+        
+    
+        var popup_7df7d14a74a6461bb3edb248ce143040 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_324b164825274567acc5449d01729c93 = $(`<div id="html_324b164825274567acc5449d01729c93" style="width: 100.0%; height: 100.0%;">Kastri - colony</div>`)[0];
+            popup_7df7d14a74a6461bb3edb248ce143040.setContent(html_324b164825274567acc5449d01729c93);
+        
+
+        marker_2f7185ecbb32426396b7a9b06bb02335.bindPopup(popup_7df7d14a74a6461bb3edb248ce143040)
+        ;
+
+        
+    
+    
+            var marker_8b11b8168f814692847bbd5281e26451 = L.marker(
+                [37.53066646, 27.27723762],
+                {}
+            ).addTo(marker_cluster_5ff99575fe7e46c787e79f28452a9cb0);
+        
+    
+            var icon_36a6b5a809524912b987fb13553bcf11 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_8b11b8168f814692847bbd5281e26451.setIcon(icon_36a6b5a809524912b987fb13553bcf11);
+        
+    
+        var popup_34968b697fba446281df0c11f02e8377 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_82776f5dd1aa491ab65c1d6d621b61b1 = $(`<div id="html_82776f5dd1aa491ab65c1d6d621b61b1" style="width: 100.0%; height: 100.0%;">Miletos - colony</div>`)[0];
+            popup_34968b697fba446281df0c11f02e8377.setContent(html_82776f5dd1aa491ab65c1d6d621b61b1);
+        
+
+        marker_8b11b8168f814692847bbd5281e26451.bindPopup(popup_34968b697fba446281df0c11f02e8377)
+        ;
+
+        
+    
+    
+            var marker_73c637bcfefb4f8c9bbb4802c5b11874 = L.marker(
+                [36.39898124, 28.14386648],
+                {}
+            ).addTo(marker_cluster_5ff99575fe7e46c787e79f28452a9cb0);
+        
+    
+            var icon_216b9ce9a7ea4a8f831de950e68add4e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_73c637bcfefb4f8c9bbb4802c5b11874.setIcon(icon_216b9ce9a7ea4a8f831de950e68add4e);
+        
+    
+        var popup_64df4257a8614ae294004fe1ec0aaf0f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9cac831059c749d0b28c6d268677a236 = $(`<div id="html_9cac831059c749d0b28c6d268677a236" style="width: 100.0%; height: 100.0%;">Trianta - colony</div>`)[0];
+            popup_64df4257a8614ae294004fe1ec0aaf0f.setContent(html_9cac831059c749d0b28c6d268677a236);
+        
+
+        marker_73c637bcfefb4f8c9bbb4802c5b11874.bindPopup(popup_64df4257a8614ae294004fe1ec0aaf0f)
+        ;
+
+        
+    
+    
+            var layer_control_4c652fa5032f4368a057f2f72f393dc8 = {
+                base_layers : {
+                    "Minoan civilization \u003cbr\u003e c. 3000 BCE \u2013 c. 1100 BCE" : tile_layer_17cf0acb409745f5a58a4889bc9a89ff,
+                },
+                overlays :  {
+                    "Main sites" : feature_group_81f405cd6f50443e80dfc01e75d39803,
+                    "Colonies" : feature_group_2057221e51b24eb3a5678141d1b94edf,
+                },
+            };
+            L.control.layers(
+                layer_control_4c652fa5032f4368a057f2f72f393dc8.base_layers,
+                layer_control_4c652fa5032f4368a057f2f72f393dc8.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_50fb59594bac4e409bfa9620e3edd352);
+        
+</script>
