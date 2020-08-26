@@ -34,7 +34,7 @@ The Minoan Civilization map
 
 The criteria was to include at least two layers on the map. There is just one layer proper
 visible on the layer control panel, but the feature groups of markers presented as different 
-categories of Minoan archaeological sites corresponds with the functionality sought after. 
+categories of Minoan archaeological sites correspond with the functionality sought after. 
 In addition to Stamen Water Color layer, a layer of Stamen Toner Labels is present to bring 
 place references, but not visible in the layer control panel. Trying to control the feature 
 groups the way implemented here actually felt more trickier than just to add a layer more.
